@@ -22,9 +22,9 @@ clean-code-javascript中文版:https://github.com/beginor/clean-code-javascript
  本来浏览器在显示我们看到的网站的时候，会做很多事情，页面渲染，js渲染等等，然后node把其中js渲染的引擎拿出来，并且使用了谷歌的V8，然后在其外面又封装了一层api，让其拥有了文件读写，网络等操作，提供了一个服务端的运行环境，但却是运行的javascipt。所以说node.js给前端开发行业带来了一场工业革命。
 3.NPM是什么：
  NPM是随同NodeJS一起安装的包管理工具，能解决NodeJS代码部署上的很多问题，常见的使用场景有以下几种：
-允许用户从NPM服务器下载别人编写的第三方包到本地使用。
-允许用户从NPM服务器下载并安装别人编写的命令行程序到本地使用。
-允许用户将自己编写的包或命令行程序上传到NPM服务器供别人使用。
+>- 允许用户从NPM服务器下载别人编写的第三方包到本地使用。
+>- 允许用户从NPM服务器下载并安装别人编写的命令行程序到本地使用。
+>- 允许用户将自己编写的包或命令行程序上传到NPM服务器供别人使用。
 4.Node.js与npm的安装：
  打开node.js官网去下载吧~安装好的node会自带npm。
  打开命令提示符，执行下面两句，看一下版本号就可以了：
@@ -48,6 +48,7 @@ npm update [--save-dev]  // 更新全部插件 。
 npm很慢，那来cnpm吧，果然万能的淘宝，哈哈   。
 npm install cnpm -g --registry=https://registry.npm.taobao.org   。
 安装好后看下版本号就可以直接用啦，用法和npm一致，就是npm换成cnpm就好了~   。
+ 
 三、工具搭建  Gulp、Grunt、webpack、browserify 
 node和npm明白是干什么的了，搭建环境吗，那可以直接开敲代码了吗？no，no，no，你还需要搭建工具：
 1.Gulp / Grunt    简化前端流程
@@ -63,6 +64,7 @@ gulp -v  // 出现版本号即为正确安装
 npm install webpack -g  // 全局安装webpack
 webpack -v  // 出现版本号即为正确安装
 全局安装过后，仍需在项目根目录进行本地安装，全局安装gulp是为了执行gulp任务，本地安装gulp则是为了调用gulp插件的功能。
+
 四、项目架构搭建
 1.package.json
 还记得上面说过的package.json嘛？package.json是基于node.js项目必不可少的配置文件，它是存放在项目根目录的普通json文件。
@@ -77,6 +79,7 @@ npm install  vue-cli
 根据webpack创建项目
 vue init webpack 项目名字<项目名不能用中文>
 react的脚手架则是 create-react-app 等，有很多模版可以自己选择，这样就避免了自己构建那么多复杂的流程。
+
 五、总结一下
 搭建环境：node.js 等
 搭建工具： Gulp、Grunt、webpack、browserify 等
