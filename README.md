@@ -18,32 +18,45 @@ clean-code-javascript中文版:https://github.com/beginor/clean-code-javascript
 二、环境搭建  Node.js与npm
 1.Node.js环境搭建：
  Node.js是一个基于Chrome V8引擎的javascript的运行环境，其特点是单线程、事件驱动，非阻塞I/O模型，非常轻便高效，其包管理工具npm，是全球最大的开源库生态系统。
+ 
 2.Node.js是做什么的呢：
  本来浏览器在显示我们看到的网站的时候，会做很多事情，页面渲染，js渲染等等，然后node把其中js渲染的引擎拿出来，并且使用了谷歌的V8，然后在其外面又封装了一层api，让其拥有了文件读写，网络等操作，提供了一个服务端的运行环境，但却是运行的javascipt。所以说node.js给前端开发行业带来了一场工业革命。
+ 
 3.NPM是什么：
  NPM是随同NodeJS一起安装的包管理工具，能解决NodeJS代码部署上的很多问题，常见的使用场景有以下几种：
 >- 允许用户从NPM服务器下载别人编写的第三方包到本地使用。
 >- 允许用户从NPM服务器下载并安装别人编写的命令行程序到本地使用。
 >- 允许用户将自己编写的包或命令行程序上传到NPM服务器供别人使用。
+
 4.Node.js与npm的安装：
  打开node.js官网去下载吧~安装好的node会自带npm。
  打开命令提示符，执行下面两句，看一下版本号就可以了：
 node -v  // 查看当前node版本
 npm -v  // 查看当前npm版本
+
 5.npm怎么用呢  。
 使用npm安装插件：命令提示符执行   。
 npm install <name> [-g] [--save-dev]   。
+ 
 5.1 <name>：node插件名称。例：npm install gulp-less --save-dev   。
+ 
 5.2、-g：全局安装。将会安装在C:\Users\Administrator\AppData\Roaming\npm，并且写入系统环境变量；  非全局安装：将会安装在当前定位目录；  全局安装可以通过命令行在任何地方调用它，本地安装将安装在定位目录的node_modules文件夹下，通过require()调用。
+
 5.3、--save：将保存配置信息至package.json（package.json是node.js的项目配置文件，在初始化文件 npm install 时会根据你配置文件中的条目进行安装）。
+
 5.4、-dev：保存至package.json的devDependencies节点，不指定-dev将保存至dependencies节点；一般保存在dependencies的像这些express/ejs/body-parser等等。
+
 5.5、使用npm卸载插件：
 npm uninstall <name> [-g] [--save-dev]  。
+
 5.6、使用npm更新插件：
 npm update <name> [-g] [--save-dev]  。
 npm update [--save-dev]  // 更新全部插件 。
+
 5.7、查看npm帮助：npm help   。
+
 5.8、当前目录已安装插件：npm lis  。
+
 6.选装 cnpm  。
 npm很慢，那来cnpm吧，果然万能的淘宝，哈哈   。
 npm install cnpm -g --registry=https://registry.npm.taobao.org   。
