@@ -1,4 +1,4 @@
-# clean-code
+# 代码整洁的 JavaScript    clean-code
 
 clean-code-javascript中文版:https://github.com/beginor/clean-code-javascript
 
